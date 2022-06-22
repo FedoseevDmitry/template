@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   position: relative;
+  max-width: 1600px;
 }
 
 * {

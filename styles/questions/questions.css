@@ -1,5 +1,5 @@
 .questions {
-  background-image: url(img/bg.jpg);
+  background-image: url(img/bg-1024.jpg);
   height: 621px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,7 +15,8 @@
   font-weight: 700;
   font-size: 35px;
   line-height: 41px;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
+  padding-right: 23px;
 }
 
 .questions__description {
@@ -56,20 +57,20 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
-  padding: 11px 38px;
   box-shadow: 0px 4px 25px rgba(21, 169, 203, 0.3);
   border-radius: 50px;
   border: none;
   color: var(--color-main);
-  min-height: 48px;
-  min-width: 218px;
-  margin-bottom: 50px;
+  height: 48px;
+  width: 218px;
+  margin-bottom: 51px;
 }
 
 .questions__text {
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
+  padding-left: 1px;
 }
 
 .questions__link {
@@ -78,7 +79,7 @@
   line-height: 23px;
   color: #4A76A8;
   text-decoration: underline;
-  text-underline-offset: 4px;
+  text-underline-offset: 2px;
   text-decoration-color: #4A76A8;
 }
 
@@ -88,9 +89,14 @@
   transition: all .3s ease;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1200px) {
   .questions {
     height: 558px;
+  }
+
+  .questions__wrapper {
+    padding-left: 17px;
+    margin-bottom: 48px;
   }
 
   .questions__title {
@@ -104,13 +110,17 @@
     line-height: 23px;
   }
 
+  .questions__form {
+    margin-bottom: 48px;
+  }
+
   .questions__fieldset {
-    gap: 20px;
+    gap: 17px;
   }
 
   .questions__input {
-    width: 377px;
-    height: 39px;
+    width: 381px;
+    height: 42px;
     padding: 8px 23px;
     border-width: 2px;
   }
@@ -127,6 +137,12 @@
   .questions__text {
     font-size: 17px;
     line-height: 20px;
+    padding-left: 2px;
+  }
+
+  .questions__link {
+    font-size: 17px;
+    line-height: 20px;
   }
 }
 
@@ -137,14 +153,16 @@
   }
 
   .questions__wrapper {
-    padding-top: 30px;
-    margin-bottom: 35px;
+    padding-top: 31px;
+    margin-bottom: 33px;
+    padding-left: 0;
   }
 
   .questions__title {
     font-size: 20px;
     line-height: 23px;
-    margin-bottom: 11px;
+    margin-bottom: 13px;
+    padding-left: 21px;
   }
 
   .questions__description {
@@ -157,14 +175,20 @@
   }
 
   .questions__fieldset {
-    gap: 15px;
+    gap: 12px;
+  }
+
+  .questions__label_no-margin {
+    margin-bottom: -2px;
   }
 
   .questions__input {
     width: 289px;
-    height: 28px;
+    height: 30px;
     border-width: 1px;
-    padding: 6px 18px;
+    padding: 0px 18px;
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .questions__input::placeholder {
@@ -173,17 +197,19 @@
   }
 
   .questions__btn {
-    height: 38px;
+    height: 37px;
     width: 174px;
     margin-bottom: 30px;
-    padding: 10px 26px;
     font-size: 16px;
     line-height: 19px;
+    padding-top: 1px;
+    padding-left: 3px;
   }
 
   .questions__text,
   .questions__link {
     font-size: 11px;
     line-height: 13px;
+    padding-left: 0px;
   }
 }

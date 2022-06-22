@@ -4,11 +4,16 @@
   padding-bottom: 45px;
 }
 
+.footer__wrapper {
+  padding-left: 71px;
+  margin: 0;
+}
+
 .footer__list {
   display: flex;
   justify-content: space-between;
   padding-left: 30px;
-  padding-right: 30px;
+  padding-right: 100px;
 }
 
 .footer__item {
@@ -30,6 +35,7 @@
   display: flex;
   flex-direction: column;
   text-align: start;
+  padding-top: 1px;
 }
 
 .footer__wrapper-call {
@@ -41,6 +47,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
+  padding-bottom: 6px;
 }
 
 .footer__call_callback {
@@ -50,6 +57,7 @@
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-color: var(--color-main);
+  padding-bottom: 4px;
 }
 
 .footer__link {
@@ -68,35 +76,50 @@
   opacity: 0.5;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1200px) {
   .footer {
-    padding-top: 25px;
-    padding-bottom: 0;
+    padding-top: 37px;
+    height: 158px;
   }
 
   .footer__wrapper {
-    padding-bottom: 25px;
+    padding-left: 0;
   }
 
-  .footer__item_hide {
-    display: none;
+  .footer__list {
+    padding-right: 30px;
   }
 
-  .footer__wrapper-author {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .footer__logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .footer__call_number {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .footer__call_callback {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .footer__text_author {
+    padding-right: 21px;
   }
 }
 
 @media (max-width: 540px) {
   .footer {
     height: 127px;
+    padding-top: 25px;
   }
 
   .footer__list {
-    padding-left: 15px;
+    padding-left: 16px;
     padding-right: 15px;
+    margin-bottom: 25px;
   }
 
   .footer__logo {
@@ -107,6 +130,11 @@
   .footer__wrapper-text {
     font-size: 8px;
     line-height: 11px;
+    padding-bottom: 2px;
+  }
+
+  .footer__text_copyright {
+    padding-bottom: 1px;
   }
 
   .footer__wrapper-call {
@@ -120,5 +148,16 @@
   .footer__author {
     font-size: 12px;
     line-height: 17px;
+    font-weight: 500;
+  }
+
+  .footer__item_hide {
+    display: none;
+  }
+
+  .footer__wrapper-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

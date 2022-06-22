@@ -13,7 +13,7 @@
   justify-content: space-between;
   height: 100%;
   margin-bottom: 120px;
-  padding: 0 30px;
+  padding: 0 100px;
 }
 
 .header__wrapper-call {
@@ -29,8 +29,8 @@
 
 .header__text {
   font-size: 23.85px;
-  line-height: 27.95px;
-  margin-bottom: 2.85px;
+  line-height: 28px;
+  margin-bottom: 6px;
 }
 
 .header__call {
@@ -58,12 +58,15 @@
   font-size: 52px;
   line-height: 61px;
   color: rgba(255, 255, 255, 0.86);
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .header__description {
   line-height: 31px;
   color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 90px;
+  max-width: 960px;
+  margin: 0 auto;
   margin-bottom: 90px;
 }
 
@@ -90,23 +93,36 @@
   .header__section {
     padding-top: 26px;
     height: 528px;
+    background-image: url(img/bg-1024.jpg);
   }
 
   .header__wrapper {
     margin-bottom: 70px;
     display: flex;
     align-items: center;
+    padding-left: 30px;
+    padding-right: 32px;
+  }
+
+  .header__logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .header__wrapper-call {
+    gap: 6px;
   }
 
   .header__text {
     font-size: 21px;
     line-height: 25px;
-    margin-bottom: 4px;
+    margin-bottom: 0;
   }
   
   .header__call {
     font-size: 13px;
     line-height: 15px;
+    padding-bottom: 2px;
   }
 
   .header__title {
@@ -118,7 +134,8 @@
   .header__description {
     font-size: 18px;
     line-height: 25px;
-    margin-bottom: 60.43px;
+    margin-bottom: 57px;
+    max-width: 754px;
   }
 }
 
@@ -163,9 +180,13 @@
     background-image: url(img/bg-low.jpg);
   }
 
+  .header__wrapper {
+    margin-bottom: 66px;
+  }
+
   .header__logo {
-    max-width: 30px;
-    max-height: 30px;
+    width: 30px;
+    height: 30px;
   }
 
   .header__link {
@@ -180,7 +201,7 @@
   .header__title {
     font-size: 20px;
     line-height: 23px;
-    margin-bottom: 23px;
+    margin-bottom: 26px;
   }
 
   .header__description {
@@ -190,12 +211,16 @@
 
   .header__description-lowres {
     display: block;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .header__btn {
     font-size: 16px;
     line-height: 19px;
     padding: 9px 29px;
+    width: 160.34px;
+    height: 38px;
   }
 }
