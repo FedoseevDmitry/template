@@ -274,9 +274,9 @@
 
   .slider__arrow_right {
     position: absolute;
-    background-image: url(img/svg/arrow-right.svg);
+    background-image: url(img/svg/arrow-left.svg);
     transform: rotate(180deg);
-    background-color: rgba(75, 77, 98, 0.72);
+    background-color: var(--color-main);
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50%;
