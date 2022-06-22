@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="js/slider.js"></script>
+
+  <title>Adaptive Template</title>
+</head>
+<body>
+  <header class="header">
+    <section class="header__section">
+      <div class="container">
+        <div class="header__wrapper">
+
+          <img class="header__logo" src="styles/header/img/logo.png" alt="Логотип фирмы" width="68" height="68">
+
+          <a class="header__link" href="telto:79625561234">
+            <img class="header__img-call" src="styles/header/img/svg/phone.svg" alt="Иконка телефона" width="24" height="24">
+          </a>
+
+          <div class="header__wrapper-call">
+            <a class="header__text" href="telto:79625561234">+7 (962) 556 - 1234</a>
+
+            <a class="header__call" href="#">Перезвоните мне</a>
+          </div>
+          
+        </div>
+
+        <div class="header__body">
+          <h1 class="header__title">Заголовок c уникальным торговым предложение по системе 4U</h1>
+
+          <p class="header__description">Описания предложения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему.</p>
+
+          <p class="header__description header__description-lowres">Описания предложения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более.</p>
+
+          <button class="header__btn" type="submit">Подробнее</button>
+
+        </div>
+
+      </div>
+    </section>
+  </header>
+
+  <section class="features">
+    <div class="container">
+      <div class="features__wrapper">
+        <h2 class="features__title">Уникальный заголовок для преимущества компании</h2>
+      </div>
+      
+      <h3 class="features__about">О нас</h3>
+
+      <p class="features__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить.</p>
+
+      <div class="features__block slider">
+
+        <div class="slider__nav">
+          <a class="slider__arrow slider__arrow_left" onclick="previousSlide()"></a>
+
+          <a class="slider__arrow slider__arrow_right" onclick="nextSlide()"></a>
+        </div>
+
+        <ul class="slider__list">
+
+          <li class="slider__item slider__item_1">
+            <div class="slider__block">1</div>
+
+            <p class="slider__text">Первое целевое преимущество</p>
+          </li>
+
+          <li class="slider__item slider__item_2">
+            <div class="slider__block">2</div>
+
+            <p class="slider__text">Второе целевое преимущество</p>
+          </li>
+
+          <li class="slider__item slider__item_3">
+            <div class="slider__block">3</div>
+
+            <p class="slider__text">Третье целевое преимущество</p>
+          </li>
+
+          <li class="slider__item slider__item_4">
+            <div class="slider__block">4</div>
+
+            <p class="slider__text">Четвертое целевое преимущество</p>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="questions">
+    <div class="container">
+      <div class="questions__wrapper">
+        <h2 class="questions__title">Остались вопросы?</h2>
+
+       <p class="questions__description">Оставьте номер телефона, и мы перезвоним вам</p>
+      </div>
+
+      <form class="questions__form" id="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <fieldset class="questions__fieldset">
+
+          <label class="questions__label">
+            <input class="questions__input" type="text" name="name" placeholder="Ваше имя" required>
+          </label>
+
+          <label class="questions__label">
+            <input class="questions__input" type="text" name="phone" placeholder="Телефон" required>
+          </label>
+
+          <label class="questions__label">
+            <input class="questions__input" type="email" name="email" placeholder="E-mail" required>
+          </label>
+
+        </fieldset>
+      </form>
+
+      <button class="questions__btn" type="submit" form="form">Позвоните мне</button>
+
+      <p class="questions__text">Я даю своё
+        <a class="questions__link" href="#">согласие</a>
+        на обработку моих персональных данных.
+      </p>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <ul class="footer__list">
+
+          <li class="footer__item">
+            <div class="footer__wrapper-logo">
+              <img class="footer__logo" src="styles/footer/img/logo.png" alt="Логотип фирмы" width="68" height="68">
+
+              <div class="footer__wrapper-text">
+                <p class="footer__text">© 2022 XXXcompany.</p>
+
+                <p class="footer__text">Все права защищены.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="footer__item footer__item_hide">
+            <p class="footer__text footer__text_author">Сделано Ивановым Иваном</p>
+          </li>
+
+          <li class="footer__item">
+            <div class="footer__wrapper-call">
+              <a class="footer__call footer__call_number" href="telto:79625561234">+7 (962) 556 - 1234</a>
+      
+              <a class="footer__call footer__call_callback" href="#">Перезвоните мне</a>
+            </div>
+
+            <a class="footer__link" href="telto:79625561234">
+              <img class="footer__img-call" src="styles/header/img/svg/phone.svg" alt="Иконка телефона" width="24" height="24">
+            </a>
+            
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__wrapper-author">
+        <p class="footer__author">Сделано Ивановым Иваном</p>
+      </div>
+
+    </div>
+  </footer>
+  
+</body>
+</html>
